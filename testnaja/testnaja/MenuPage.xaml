@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="testnaja.MenuPage"
+             Title="Menu"
+             Icon="icons8-menu-filled-50">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"/>
+
+            <RowDefinition/>
+
+
+        </Grid.RowDefinitions>
+        <BoxView
+            Color="Green"/>
+
+    <StackLayout
+        Orientation="Vertical"
+        VerticalOptions="End"
+        Margin="6">
+
+            <Image
+                Source="https://pbs.twimg.com/profile_images/831488994449846272/bItQXu9r.jpg"
+                HorizontalOptions="Start"
+                WidthRequest="100"
+                HeightRequest="100"/>
+            <Label
+                Text="Kim roa"
+                TextColor="White"/>
+            <Label
+                Text="We are Pristin!"
+                TextColor="White"
+                FontAttributes="Bold"/>
+
+
+        </StackLayout>
+
+        <BoxView
+            Grid.Row="1"
+            Color="Silver"/>
+
+        <ScrollView
+            Grid.Row="1">
+
+            <StackLayout
+            Orientation="Vertical"
+            Padding="20">
+
+                <Label
+                    Text="View"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"
+                    />
+                <Button
+                    x:Name="viewButton"
+                    Text="All View"
+                    BackgroundColor="BlueViolet"
+                    TextColor="White"/>
+                <BoxView
+                    Color="White"
+                    HeightRequest="5"
+                    Margin="3"/>
+                <Label
+                    Text="Layout"
+                    HorizontalTextAlignment="Center"
+                    TextColor="White"/>
+                <Button
+                    x:Name="stackButton"
+                    BackgroundColor="DeepPink"
+                    Text="Stack Layout"
+                    TextColor="White"
+                    />
+
+                <Button
+                    x:Name="gridButton"
+                    BackgroundColor="Khaki"
+                    Text="Grid Layout"
+                    TextColor="White"
+                    />
+                
+                <Button
+                    x:Name="absoluteButton"
+                    BackgroundColor="LightSalmon"
+                    Text="Absolute Layout"
+                    TextColor="White"
+                    />
+                
+                
+                
+
+
+
+
+                <BoxView
+                    Color="White"
+                    HeightRequest="5"
+                    Margin="3"/>
+
+                <Label
+                    Text="Page"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"/>
+
+                <Button
+                x:Name="contentButton"
+                Text="Content Page"
+                BackgroundColor="Azure"/>
+            <Button
+                x:Name="navButton"
+                Text="Navigation Page"
+                BackgroundColor="Beige"/>
+                <Button
+                x:Name="tebButton"
+                Text="Teb Page"
+                BackgroundColor="Ivory"/>
+                <Button
+                x:Name="carouselButton"
+                Text="Carousel Page"
+                BackgroundColor="Ivory"/>
+
+            </StackLayout>
+        </ScrollView>
+       
+    </Grid>
+
+    
+   
+</ContentPage>

@@ -4,8 +4,102 @@
              xmlns:local="clr-namespace:testnaja"
              x:Class="testnaja.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+
+    <StackLayout
+        BackgroundColor="Aqua"
+        Orientation="Vertical">
+
+
+
+        <Label
+            Text="NittayaNittayaNittayaNittayaNittayaNittayaNittayaNittayaNittayaNittayaNittayaNittayaNittayaNittayaNittaya"
+            LineBreakMode="TailTruncation"
+            BackgroundColor="Yellow"
+            TextColor="Red"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            WidthRequest="500"
+            HeightRequest="100"
+            x:Name="firstNamelabel"
+            
+            />
+
+        <Entry
+            Placeholder="Input ja"
+            Keyboard="Email"
+            x:Name="firstNameentry"/>
+
+        <Button
+            x:Name="whyButton"
+            Text="OK"
+            BackgroundColor="Silver"
+            />
+        <DatePicker/>
+        <TimePicker/>
+        <Picker
+            Title="เลือกเพศ"
+            x:Name="genderPicker"/>
+
+        <ScrollView
+            Orientation="Horizontal">
+
+            <StackLayout
+            Orientation="Horizontal"
+            BackgroundColor="Yellow"
+            HeightRequest="100">
+            <Button
+                Text="Page"
+                BackgroundColor="Blue"
+                WidthRequest="100"/>
+            <Button
+                Text="Page"
+                BackgroundColor="Red"
+                WidthRequest="100"/>
+            <Button
+                Text="Page"
+                BackgroundColor="AliceBlue"
+                WidthRequest="100"/>
+            <Button
+                Text="Page"
+                BackgroundColor="Gray"
+                WidthRequest="100"/>
+            <Button
+                Text="Page"
+                BackgroundColor="Green"
+                WidthRequest="100"/>
+
+           
+
+            </StackLayout>
+        </ScrollView>
+
+        <Label
+                    x:Name="valueLabel"/>
+            <Slider
+                    Maximum="100"
+                    Minimum="0"
+                    Value="50"
+                    x:Name="mySlider"
+                    />
+
+            <Stepper
+                    Maximum="10"
+                    Minimum="0"
+                    Value="0"
+                    Increment="1"
+                    x:Name="myStepper"/>
+
+            <Switch
+                    IsToggled="True"/>
+
+        
+
+        <WebView
+                    Source="https://www.youtube.com/watch?v=J6LAzgZi8N8"
+                    HeightRequest="50"/>
+
+
+
+    </StackLayout>
 
 </ContentPage>
